@@ -2,7 +2,7 @@
 class ExempleAssertionTest extends \PHPUnit\Framework\TestCase
 {
     /** @test */
-    function assertionSame()
+    public function assertionSame()
     {
         $string1="testing";
         $string2="Testing";
