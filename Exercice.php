@@ -11,10 +11,22 @@ public function assertChaine()
 public function testExistance()
 {
     $login="mylogin";
-    $password="log";
+    $password="Log";
     $this->assertStringContainsStringIgnoringCase($password,$login);
 
 
+}
+/** @test */
+public function veriflogin()
+{
+    $login="myfavoritelogin";
+    $this->assertGreaterThan(8,strlen($login));
+}
+/** @test */
+function verifMdp()
+{
+    $mdp="myfavoritepassword";
+    $this->assertGreaterThan(10,strlen($mdp));
 }
 
 }
