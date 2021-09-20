@@ -12,6 +12,7 @@ public function compareFalse()
 function compareTrue()
 {  $expected=22;
     $actual=44;
+    $this->assertGreaterThan($expected,$actual,"actual value in not greater than expected");
 
 }
 
