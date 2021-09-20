@@ -28,7 +28,13 @@ function verifMdp()
     $mdp="myfavoritepassword";
     $this->assertGreaterThan(10,strlen($mdp));
 }
-
+/** @test */
+public function testDateDiff()
+{
+    $date1=new DateTime('2021-01-01 00:00:00');
+    $date2=new DateTime('2021-01-01 00:00:03');
+    $this->assertNotEquals($date1->getTimestamp(),$date2->getTimestamp());
+}
 }
 
 
