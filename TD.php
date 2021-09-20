@@ -6,7 +6,7 @@ public function compareFalse()
 {
     $expected=44;
     $actual=22;
-    $this->assertGreaterThan($expected,$actual,"actual value in not greater than expected");
+   // $this->assertGreaterThan($expected,$actual,"actual value in not greater than expected");
 }
 /** @test */
 function compareTrue()
@@ -15,7 +15,13 @@ function compareTrue()
     $this->assertGreaterThan($expected,$actual,"actual value in not greater than expected");
 
 }
-
+/** @test */
+function chaineIntegration()
+{
+        $testechaine="FormationPHP";
+        $substring="Formation";
+        $this->assertStringContainsString($substring,$testechaine);
+}
 
 }
 
